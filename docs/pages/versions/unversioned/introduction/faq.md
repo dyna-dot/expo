@@ -2,7 +2,7 @@
 title: Frequently Asked Questions
 ---
 
-In addition to the questions below, see the [Expo Forum](http://forums.expo.io/) or [Expo AMA on Hashnode](https://hashnode.com/ama/with-exponent-ciw1qxry118wl4353o9kxaowl) for more common questions and answers.
+In addition to the questions below, see the [forums](http://forums.expo.io/) for more common questions and answers.
 
 ## How much does Expo cost?
 
@@ -30,10 +30,6 @@ Here are some of the things the managed workflow gives you out of the box that w
 
     Push notifications work right out of the box across both iOS and Android, using a single, unified API. You don't have to set up APNS and GCM/FCM or configure ZeroPush or anything like that. We think we've made this as easy as it can be right now.
 
--   **Facebook Login**
-
-    This can take a long time to get set up properly yourself, but you should be able to get it working in 10 minutes or less on Expo.
-
 -   **Instant Updating**
 
     All Managed apps can be updated in seconds by just clicking Publish in Expo Dev Tools. You don't have to set anything up; it just works this way. If you aren't on a Managed project, you'd either use Microsoft Code Push or roll your own solution for this problem.
@@ -50,17 +46,15 @@ Here are some of the things the managed workflow gives you out of the box that w
 
 **But no native modules...**
 
-The most limiting thing about managed Expo projects is that you can't add in your own native modules without `detach`ing and using ExpoKit. Continue reading the next question for a full explanation.
+The most limiting thing about managed Expo projects is that you can't add in your own native modules without `eject`ing. Continue reading the next question for a full explanation.
 
 ## How do I add custom native code to my Expo project?
 
-TL;DR you can do it, but most people never need to.
+Managed Expo projects don't support custom native code, including third-party libraries which require custom native components. In a managed project, you only write JavaScript.
 
-Managed Expo projects don't support custom native code, including third-party libraries which require custom native components. In a managed project, you only write pure JS. The managed workflow is designed this way on purpose and we think it's better this way.
+In [our SDK](../../sdk/overview/), we give you a large set of commonly desired, high-quality native modules. We recommend doing as much in JavaScript as possible, since it can immediately deploy to all your users and work across both platforms, and will always continue to benefit from Expo SDK updates.
 
-In [our SDK](../../sdk/overview/), we give you a large set of commonly desired, high-quality native modules. We recommend doing as much in JS as possible, since it can immediately deploy to all your users and work across both platforms, and will always continue to benefit from Expo SDK updates. Especially in the case of UI components, there is pretty much always a better option written in JS.
-
-However, if you need something very custom--like on-the-fly video processing or low level control over the Bluetooth radio to do a firmware update--we do have early/alpha support for [using Expo in native Xcode and Android Studio projects](../../expokit/overview/).
+However, if you need something custom that isn't possible with the native modules provided in the SDK, like on-the-fly video processing or low-level control over the Bluetooth radio to do a firmware update and [other features requested here](https://expo.canny.io/feature-requests), you can run `expo eject` and have full control over the underlying native projects.
 
 ## Is Expo similar to React for web development?
 
@@ -68,7 +62,7 @@ Expo and React Native are similar to React. You'll have to learn a new set of co
 
 ## How do I share my Expo project? Can I submit it to the app stores?
 
-The fastest way to share your managed Expo project is to publish it. You can do this by clicking 'Publish' in Expo Dev Tools or running `expo publish` in your project. This gives your app a URL; you can share this URL with anybody who has the Expo client for Android and they can open your app immediately. [Read more about publishing on Expo](https://blog.expo.io/publishing-on-exponent-790493660d24). To share with iOS users, you can use Apple TestFlight.
+The fastest way to share your managed Expo project is to publish it. You can do this by clicking 'Publish' in Expo Dev Tools or running `expo publish` in your project. This gives your app a URL; you can share this URL with anybody who has the Expo client for Android and they can open your app immediately. [Read more about publishing on Expo](https://blog.expo.io/publishing-on-exponent-790493660d24). To share with iOS users, you can use Apple TestFlight or sign up for the [Priority Plan](https://expo.io/developer-services) in order to share your app with teammates through the Expo client.
 
 When you're ready, you can create a standalone app (`.ipa` and `.apk`) for submission to Apple and Google's app stores. Expo will build the binary for you when you run one command; see [Building Standalone Apps](../../distribution/building-standalone-apps/#building-standalone-apps). Apple charges $99/year to publish your app in the App Store and Google charges a $25 one-time fee for the Play Store.
 
@@ -83,8 +77,6 @@ Right now, the easiest way to do this is to use `expo init` (with Expo CLI) to m
 If you have similar native module dependencies to what is exposed through the Expo SDK, this process shouldn't take more than a few minutes (not including `npm install` time). Please feel free to ask us questions if you run into any issues.
 
 If you are using native libraries that aren't supported by Expo, you will either have to rewrite some parts of your application to use similar APIs that are part of Expo, or you just might not be able to get all parts of your app to work. Many things do though!
-
-_N.B. We used to maintain a tool `exp convert` but it is not currently working or maintained so the above method is the best way to get an existing React Native project working on Expo_
 
 ## What is Exponent and how is it different from Expo?
 

@@ -15,9 +15,9 @@ const sections = [
     name: 'Introduction',
     reference: [
       'What is Expo?',
-      'Managed and Bare Workflows',
-      'Why not Expo?',
-      'Frequently Asked Questions',
+      'Workflows',
+      'Limitations',
+      'Frequently asked questions',
       'Already used React Native?',
     ],
   },

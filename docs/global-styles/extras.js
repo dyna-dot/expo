@@ -13,4 +13,8 @@ export const globalExtras = `
   .react-player > video {
     outline: none;
   }
+
+  blockquote {
+    background: #fbfbfb;
+  }
 `;

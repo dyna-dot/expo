@@ -1,11 +1,13 @@
 ---
-title: Why not Expo?
-sidebar_title: Why not Expo?
+title: Limitations
+sidebar_title: Limitations
 ---
 
 As explained on the [workflows overview page](../managed-vs-bare/), the managed workflow is kind of like "[Rails](https://rubyonrails.org/)" and "[Create React App](https://github.com/facebook/create-react-app)" for React Native. If you use the tools we provide in the managed workflow to build your app, we try to handle as much of the complexity of building apps for you as we can. A developer using the managed workflow doesn't use Xcode or Android Studio, they just write JavaScript code and manage configuration through [app.json](../../workflow/configuration/).
 
-This workflow won't be suitable for *every possible app*. There are plenty of cases where its current constraints may not be appropriate for your project. The intention of this document is to outline those cases, so that you don't go with the managed workflow end up getting frustrated when you encounter an obstacle. When you do encounter an obstacle, you can run `expo eject` in your project and you'll have access to all of the underlying native code with no extra cruft. When you eject you're converting your project to what we call the [bare workflow](../../introduction/managed-vs-bare/). The following limitations do not apply to the bare workflow &mdash; the tradeoffs associated with it are the same as React Native in general.
+This workflow won't be suitable for *every possible app*. There are plenty of cases where its current constraints may not be appropriate for your project.
+
+The intention of this document is to outline those cases, so that you don't go with the managed workflow end up getting frustrated when you encounter an obstacle. When you do encounter an obstacle, you can run `expo eject` in your project and you'll have access to all of the underlying native code with no extra cruft. When you eject you're converting your project to what we call the [bare workflow](../../introduction/managed-vs-bare/). The following limitations do not apply to the bare workflow &mdash; the tradeoffs associated with it are the same as React Native in general.
 
 ## Limitations of the managed workflow
 
