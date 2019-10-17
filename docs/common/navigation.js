@@ -3,7 +3,7 @@ const packageVersion = require('../package.json').version;
 
 // Groups of sections
 const GROUPS = {
-  'The Basics': ['Introduction', 'Get Started'],
+  'The Basics': ['Introduction', 'Get Started', 'Next Steps'],
   'Managed Workflow': ['Fundamentals', 'Guides', 'Distributing Your App', 'ExpoKit'],
   'Bare Workflow': ['Essentials'],
   'API Reference': ['Expo SDK', 'React Native'],
@@ -16,12 +16,26 @@ const sections = [
     reference: [
       'What is Expo?',
       'Workflows',
+      'Walkthrough',
       'Limitations',
       'Frequently asked questions',
-      'Already used React Native?',
+      'Common Questions',
     ],
   },
-  { name: 'Get Started', reference: ['Installation', 'Community', 'Additional Resources'] },
+  {
+    name: 'Get Started',
+    reference: [
+      'Installation',
+      'Create a new app',
+    ],
+  },
+  {
+    name: 'Next Steps',
+    reference: [
+      'Join the Community',
+      'Additional Resources',
+    ],
+  },
   {
     name: 'Guides',
     reference: [

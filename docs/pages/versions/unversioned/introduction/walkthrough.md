@@ -1,15 +1,15 @@
 ---
-title: Managed Workflow Walkthrough
+title: Walkthrough
 sidebar_title: Walkthrough
 ---
 
 import Video from '../../../../components/plugins/Video'
 
-If you're a top-down learner and you would like to get a high-level understanding of what it looks like to build, deploy, and update an app with the managed workflow, this is the right place for you. **Feel free to skip this if you just want to write code as quickly as possible** &mdash; [Up and Running](../up-and-running/) is for you.
+There's no need to install anything and follow along or even understand everything here. In the same way that getting a quick tour of Paris won't make you an expert on Paris, this walkthrough serves to help you identify a few landmarks and the most important areas in the managed workflow. You can do a walkthrough of the [bare workflow](../../bare/exploring-bare-workflow/) later on.
 
 ## Initialize a project
 
-Let’s get started by initializing a project, as described in [Up and Running](../up-and-running/). `expo init` gives you several options for templates, including a [TypeScript](https://www.typescriptlang.org/) template and one with [React Navigation](https://reactnavigation.org/) installed and configured with a tab-based navigation structure.
+Let’s get started by initializing a project. `expo init` gives you several options for templates, including a [TypeScript](https://www.typescriptlang.org/) template and one with [React Navigation](https://reactnavigation.org/) installed and configured with a tab-based navigation structure.
 
 <Video file="exploring-managed/init.mp4" spaceAfter={30} />
 
@@ -139,8 +139,8 @@ An [in-depth guide](../../guides/push-notifications/) to setting up push notific
 
 <hr />
 
-### That's it!
+### Up next
 
-You are now, at a very high level, familiar with the steps you would go through to create an app with the Expo managed workflow. Continue on to [Up and Running](../up-and-running/) to get started coding!
+You are now, at a very high level, familiar with the steps you would go through to create an app with the Expo managed workflow.
 
-If it turns out that the managed workflow won't be a good fit for your app because you need to add custom native code, check out the [bare workflow walkthrough](../../bare/exploring-bare-workflow/).
+Let's move on to [learn about the limitations](../../introduction/why-not-expo/).

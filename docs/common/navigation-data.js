@@ -15,6 +15,7 @@ const DIR_MAPPING = {
   sdk: 'Expo SDK',
   'react-native': 'React Native',
   'get-started': 'Get Started',
+  'next-steps': 'Next Steps',
   workflow: 'Fundamentals',
   distribution: 'Distributing Your App',
   expokit: 'ExpoKit',
