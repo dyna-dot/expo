@@ -8,7 +8,7 @@ The two approaches to building applications with Expo tools are called the "mana
 - With the managed workflow you only write JavaScript / TypeScript and Expo tools and services take care of the rest for you.
 - In the bare workflow you have full control over every aspect of the native project, and Expo tools can't help quite as much.
 
-> 💡 **If you've used React Native without any Expo tools** then you have used the "bare workflow", but the name probably doesn't sound familiar. We at Expo call it "bare" because it's "bare" relative to managed Expo projects, and it's easier to talk about something when it has a name. If you have direct access to the native code, it's a bare project. The ["Already used React Native?"](../../workflow/already-used-react-native/) page might be useful for you to quickly understand where Expo fits in.
+> 💡 **If you've used React Native without any Expo tools** then you have used the "bare workflow", but the name probably doesn't sound familiar. We call this "bare" somewhat in jest and because of the term "bare metal" which  and it's easier to talk about something when it has a name. If you have direct access to the native code, it's a bare project. The ["Already used React Native?"](../../workflow/already-used-react-native/) page might be useful for you to quickly understand where Expo fits in.
 
 ## Managed workflow
 
@@ -18,7 +18,7 @@ Apps are built with the managed workflow using the [expo-cli](../../workflow/exp
 
 While you can do a lot with the managed workflow, you can't do *everything* with it, so what are your options when you encounter a [limitation](../../introduction/why-not-expo/)? 
 
-> 🤓 We will discuss the limitations more in depth in the next section, for now let's just look at what will happen if it turns out one applies to your application.
+> 🤓 We will discuss the limitations more in depth soon, for now let's just look at what will happen if it turns out one applies to your application.
 
 
 ### What happens if I run up against a limitation?
@@ -41,8 +41,5 @@ Im summary, use the bare workflow when you need it due to limitations, otherwise
 
 ## Up next
 
-
-We recommend scrolling through the and the [bare workflow walkthrough](../../bare/exploring-bare-workflow/) to get a more complete picture of building an app end-to-end with each approach. They have a bunch of videos and they are relatively easy to skim through. Come back here when you're done, or visit them later, up to you.
-
-- 📺 Text can only go so far - if you want a more complete picture of building an app end-to-end with the managed workflow, [you should continue to the Walkthrough page](../../introduction/walkthrough/). There are a bunch of videos and it's easy to skim through, and you should leave it with a better sense of what building a managed app looks like.
 - 📄 If you're hung up on the earlier mention of "limitations" then you can [move ahead to the limitations page](../../introduction/why-not-expo/).
+- 📺 Text can only go so far - if you want a more complete picture of building an app end-to-end with the managed workflow, [you should continue to the Walkthrough page](../../introduction/walkthrough/). There are a bunch of videos and it's easy to skim through, and you should leave it with a better sense of what building a managed app looks like. [Go watch them now.](../../introduction/walkthrough/)

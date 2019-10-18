@@ -5,7 +5,7 @@ sidebar_title: Walkthrough
 
 import Video from '../../../../components/plugins/Video'
 
-There's no need to install anything and follow along or even understand everything here. In the same way that getting a quick tour of Paris won't make you an expert on Paris, this walkthrough serves to help you identify a few landmarks and the most important areas in the managed workflow. You can do a walkthrough of the [bare workflow](../../bare/exploring-bare-workflow/) later on.
+There's no need to install anything or even understand everything here, this page is meant to give you an overview of some of the big pieces of building a managed app. In the same way that getting a quick tour of Paris won't make you an expert on Paris, this walkthrough serves to help you identify a few landmarks and the most important areas in the managed workflow. You can do a walkthrough of the [bare workflow](../../bare/exploring-bare-workflow/) later on.
 
 ## Initialize a project
 
@@ -137,9 +137,7 @@ An [in-depth guide](../../guides/push-notifications/) to setting up push notific
 
 <Video file="exploring-managed/notify.mp4" />
 
-<hr />
-
-### Up next
+## Up next
 
 You are now, at a very high level, familiar with the steps you would go through to create an app with the Expo managed workflow.
 

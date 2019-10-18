@@ -3,7 +3,7 @@ title: Limitations
 sidebar_title: Limitations
 ---
 
-> *Not knowing the limitations of your tools limits your success at using them.*
+> *Your success will be limited if you don't know the limitations of your tools.*
 >
 > &mdash; *Confucius <small>(but not really)</small>*
 
@@ -80,8 +80,44 @@ In the bare workflow we have full access to the underlying native projects and a
 
 The following list is therefore specifically oriented towards to the limitations that exist around using Expo tools and services in the bare workflow.
 
-- Notification service only works in the managed workflow
-- Build service only works in the managed workflow
-- Updates service only works in the managed workflow
-- Configuration must be done on each native project rather tha nonce with `app.json`
- - Configuring app icons, launch screen, and so on must be configured in the native projects for each platform using the standard native tooling, rather than once using a simple JSON object.
+
+<details><summary><h4>Notification service only works in the managed workflow</h4></summary>
+<p>
+
+You can use any notification service that you like in the bare workflow, but not the Expo notification service. We're working on making this possible in the near future.
+
+</p>
+</details>
+
+
+<details><summary><h4>Build service only works in the managed workflow</h4></summary>
+<p>
+
+To build your app binaries for distribution on the Apple App Store and Google Play Store you will need to follow the same steps that you would in any native project, the Expo build service can't handle it for you. We are working on bringing bare workflow support to the build service in the near future.
+
+</p>
+</details>
+
+
+<details><summary><h4>Over-the-air updates service only works in the managed workflow</h4></summary>
+<p>
+
+The over-the-air updates service does not work in the bare workflow, we are working on adding support in the immediate future.
+
+</p>
+</details>
+
+<details><summary><h4>Configuration must be done on each native project rather than once with app.json</h4></summary>
+<p>
+
+Configuring app icons, launch screen, and so on must be configured in the native projects for each platform using the standard native tooling, rather than once using a simple JSON object.
+
+</p>
+</details>
+
+## Up next
+
+If you've been reading along each section of the introduction then you will have a pretty good high-level understanding of Expo tools.
+
+- 👩‍💻 If you have heard enough and want to get to coding, [jump ahead to "Installation"](../../get-started/installation/).
+- ⁉️ If you have some unanswered questions, [continue to the "Common Questions" page](../../introduction/faq/).

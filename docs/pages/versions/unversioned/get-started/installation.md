@@ -27,12 +27,12 @@ Verify that the installation was successful by running `expo whoami`. You're not
 
 ## 2. Mobile app: Expo client for iOS and Android
 
-> ⚠️ **Required operating system versions:** The minimum Android version is Lollipop (5) and the minimum iOS version is iOS 10.0.
-
 Expo client is the tool you will use to run your projects while you're developing them. When you serve your project with Expo CLI, it generates a development URL that you can open in Expo client to preview your app.
 
 - 🤖 [Download Expo client for Android from the Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent)
 - 🍎 [Download Expo client for iOS from the App Store](https://itunes.com/apps/exponent)
+
+> ⚠️ **Required operating system versions:** The minimum Android version is Lollipop (5) and the minimum iOS version is iOS 10.0.
 
 When the Expo client is finished installing, open it up. If you created an account with `expo-cli` then you can sign in here on the "Profile" tab. This will make it easier for you to open projects in the client when you have them open in development &mdash; they will appear automatically in the "Projects" tab of the client app.
 
