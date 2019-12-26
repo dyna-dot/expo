@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "lodash": "^4.6.0",
-    "prop-types": "^15.6.0"
+    "prop-types": "15.7.2"
   },
   "devDependencies": {
     "expo-module-scripts": "^1.0.0"
