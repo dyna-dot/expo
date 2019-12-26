@@ -16,19 +16,19 @@
     "build": "gulp"
   },
   "devDependencies": {
-    "babel-core": "^5.8.25",
-    "babel-loader": "^5.3.2",
-    "del": "^1.2.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "del": "^5.1.0",
     "fbjs-scripts": "^1.0.0",
-    "gulp": "^3.9.0",
-    "gulp-babel": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-derequire": "^2.1.0",
-    "gulp-flatten": "^0.1.0",
-    "gulp-header": "^1.2.2",
+    "gulp-flatten": "^0.4.0",
+    "gulp-header": "^2.0.9",
     "gulp-util": "^3.0.6",
-    "object-assign": "^3.0.0",
-    "run-sequence": "^1.1.2",
-    "webpack": "1.11.0",
-    "webpack-stream": "^2.1.0"
+    "object-assign": "^4.1.1",
+    "run-sequence": "^2.2.1",
+    "webpack": "4.41.4",
+    "webpack-stream": "^5.2.1"
   }
 }
